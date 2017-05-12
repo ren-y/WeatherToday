@@ -15,30 +15,37 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="t1U-QD-3u5">
-                                <frame key="frameInset" minX="105" minY="154" width="187" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="t1U-QD-3u5">
+                                <variation key="heightClass=regular-widthClass=regular" image="rrlogo"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="weather info at your fingertips!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbR-4Y-noM">
-                                <frame key="frameInset" minX="72" minY="334" width="274" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather info at your fingertips!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbR-4Y-noM">
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="29"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.10590688139200211" green="0.33716323971748352" blue="0.34040069580078125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jbR-4Y-noM" firstAttribute="top" secondItem="t1U-QD-3u5" secondAttribute="bottom" constant="8" id="BFf-Wa-HM6"/>
+                            <constraint firstItem="t1U-QD-3u5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Pc9-sl-7Hq"/>
+                            <constraint firstItem="t1U-QD-3u5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cc6-Fo-gbd"/>
+                            <constraint firstItem="jbR-4Y-noM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wPB-tH-oZX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50" y="373.828125"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo" width="153" height="137"/>
+        <image name="rrlogo" width="515" height="468"/>
     </resources>
 </document>
