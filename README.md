@@ -1,14 +1,13 @@
 # WeatherToday
 
 
-===============
+
 To run the app
-==============
+
  1. Download the app 
  2.Move all .swift & .xcdatamodel files (except Constant.swift, .xcodeproj and WeatherTodaytests) to WeatherToday folder.
-=============
+
 Description
-=============
 
 1. The app has two tabs
 
